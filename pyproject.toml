@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mr-screen-save"
+version = "0.1.0"
+description = ""
+authors = ["Maxim Rurenko <mrurenko@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mr_screen_save"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.7.0"}
+pyautogui = "^0.9.53"
+dasbus = "^1.7"
+pygobject = "^3.42.2"
+pillow = "^9.4.0"
+mss = "^7.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ptpython = "^3.0.22"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
